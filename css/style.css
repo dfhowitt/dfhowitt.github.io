@@ -4,6 +4,7 @@
 /* Importing components */
 @import url("components/alert.css");
 @import url("components/banner.css");
+@import url("components/container.css");
 @import url("components/footer.css");
 @import url("components/portfolio_card.css");
 @import url("components/navbar.css");
@@ -28,8 +29,9 @@ p {
   font-weight: lighter;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, a, p {
   font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
 }
 
 h1 {

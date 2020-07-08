@@ -1,33 +1,78 @@
-/* TODO: design your flexbox layout with a sticky map */
-
-/* We just give you a Gmaps with random width/height */
-
-.sidenav {
-  height: 100%;
-  width: 120px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 1;
-  overflow-x: hidden;
-  padding-top: 20px;
+.navbar {
+  transition: 0.6s;
+  background: transparent;
   text-align: center;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.sidenav a {
+.dropdown {
+  display: none;
+}
+
+.dropdown a {
+  display: block;
+}
+
+.dropdown button:focus {
+  outline: 0;
+}
+
+.navbar i {
+  color: white;
+  font-size: 24px;
+}
+
+/*.dropdown-menu {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+}*/
+
+.navbar.scrolled {
+  background-color: black !important;
+  transition: background-color 0.6s linear;
+  opacity: 0.9;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 6px;
+}
+
+.navbar a:hover {
   text-decoration: none;
   color: white;
 }
 
-.sidenav a:hover {
-  text-decoration: none;
-  color: white;
+@media (max-width: 640px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar-left {
+    display: none;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+  }
+  .dropdown a {
+    display: inline;
+  }
 }
+
 
 /*@media (min-width: 576px) {
   .cards {
