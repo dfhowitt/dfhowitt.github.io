@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: path.resolve(__dirname, "./lib/wagon_race.js"),
+  entry: path.resolve(__dirname, "./lib/something.js"),
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),

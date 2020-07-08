@@ -1,15 +1,17 @@
 .banner {
-  display: flex;
-  flex-direction: column;
+/*  background-image: url('../../images/me.JPG');*/
   align-items: center;
   justify-content: space-around;
-  height: 400px;
-  width: 100vw;
-  position: relative;
-  top: -56px;
-  padding-top: 56px;
+  width: 100%;
+  height: auto;
 }
-.banner .home-search {
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*.banner .home-search {
   z-index: 1;
 }
 
@@ -30,6 +32,6 @@
 .btn-flat:hover {
   background: #1BCB7F;
   color: white;
-}
+}*/
 
 

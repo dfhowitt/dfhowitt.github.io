@@ -4,19 +4,29 @@
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 120px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  opacity: 0.9;
+  opacity: 1;
   overflow-x: hidden;
   padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.content {
-  margin-left: 200px; /* Same as the width of the sidenav */
+.sidenav a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /*@media (min-width: 576px) {
