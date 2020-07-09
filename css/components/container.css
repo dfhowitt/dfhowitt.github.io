@@ -1,4 +1,11 @@
 .quote {
   text-align: center;
-  margin: 20px 4px 20px 4px;
+  font-size: 16px;
 }
+
+@media (max-width: 880px) {
+  .quote {
+    text-align: justify;
+  }
+}
+

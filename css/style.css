@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 
 /* Importing components */
+@import url("components/about.css");
 @import url("components/alert.css");
 @import url("components/banner.css");
 @import url("components/container.css");
+@import url("components/education_card.css");
 @import url("components/footer.css");
-@import url("components/portfolio_card.css");
+@import url("components/icons.css");
 @import url("components/navbar.css");
-
+@import url("components/portfolio_card.css");
 
 
 /* Importing layouts */
@@ -23,13 +25,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   background: #F4F4F4;
+  text-align: justify;
 }
 
 p {
   font-weight: lighter;
 }
 
-h1, h2, h3, h4, h5, a, p {
+h1, h2, h3, h4, h5, a, p, li, figcaption {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
 }

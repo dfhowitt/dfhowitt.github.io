@@ -1,0 +1,40 @@
+.skills-icons {
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skills-icons i {
+  background: transparent;
+  font-size: 44px;
+  opacity: 0.8;
+}
+
+.skills-icons img {
+  height: 44px;
+  opacity: 0.8;
+}
+
+.skills-icons p {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.skills-icons figcaption {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+@media (min-width: 881px) {
+  .skills-icons {
+    display: flex;
+  }
+}
+
+@media (max-width: 880px) {
+  .skills-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+  }
+}
+

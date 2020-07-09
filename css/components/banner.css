@@ -24,18 +24,44 @@
 }
 
 .banner-header {
-  margin-bottom: 320px;
+  margin-bottom: 348px;
   opacity: 0.85;
   font-weight: lighter;
 }
 
+@media (max-height: 572px){
+  .banner-header {
+    display: none;
+    margin-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .banner-header {
+    position: absolute;
+    bottom: 10;
+    left: 30;
+    width: 112px;
+  }
+}
+
+@media (min-width: 640px) and (max-height: 572px) {
+  .banner-header {
+    position: absolute;
+    bottom: 10;
+    left: 30;
+    width: 112px;
+  }
+}
+
 .typed {
-  font-size: 28px;
+  font-size: 24px;
   display: inline;
 }
 
 .typed-cursor{
-    font-size: 32px;
+    font-size: 24px;
     opacity: 1;
     animation: blink 0.7s infinite;
 }
@@ -73,7 +99,7 @@
 .banner-nav .btn a {
   height: 36px;
   color: black;
-  text-decoration: none;
+  padding: 12px;
 }
 
 .banner-nav .btn a:hover {

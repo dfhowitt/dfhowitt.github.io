@@ -1,0 +1,32 @@
+@media (min-width: 1000px) {
+  .education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+}
+
+.education-card img {
+  height: 30px;
+}
+
+.education-le-wagon {
+
+}
+
+.education-lse img {
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+/*
+@media (min-width: 1200px) {
+  .about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+}*/
+
+
+
