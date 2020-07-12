@@ -1,0 +1,16 @@
+@media (min-width: 1000px) {
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+  }
+}
+
+.experience-card {
+  font-size: 16px;
+}
+
+.experience-card img {
+  height: 30px;
+  margin-bottom: 8px;
+}

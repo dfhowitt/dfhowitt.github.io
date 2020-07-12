@@ -6,27 +6,109 @@
   }
 }
 
-.education-card img {
-  height: 30px;
+.education-card {
+  font-size: 16px;
 }
 
-.education-le-wagon {
+.education-card img {
+  height: 30px;
+  margin-bottom: 8px;
+}
 
+.education-le-wagon a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.education-le-wagon img {
+  margin-left: 4px;
+}
+
+.education-le-wagon p {
+  margin-bottom: 0px;
+}
+
+.education-card button:focus {
+  outline: 0;
+}
+
+.education-header {
+  align-items: center;
 }
 
 .education-lse img {
   margin-right: 4px;
-  margin-bottom: 8px;
 }
 
-/*
-@media (min-width: 1200px) {
-  .about-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+.education-lse p {
+  margin-bottom: 0px;
+}
+
+.show-btn-lse {
+  margin: auto;
+  width: 7%;
+  margin-bottom: 12px;
+  padding: 4px;
+}
+
+#show-click-lse {
+  border: none;
+  background: transparent;
+  color: black;
+  border-radius: 4px;
+  opacity: 0.64;
+  font-size: 16px;
+  margin-top: 12px;
+  padding: 4px;
+  width: 40px;
+}
+
+#show-click-lse:hover {
+  border: none;
+}
+
+.show-btn-le-wagon {
+  margin: auto;
+  width: 7%;
+  margin-bottom: 12px;
+  padding: 4px;
+}
+
+#show-click-le-wagon {
+  border: none;
+  background: transparent;
+  color: black;
+  border-radius: 4px;
+  opacity: 0.64;
+  font-size: 16px;
+  margin-top: 12px;
+  padding: 4px;
+  width: 40px;
+}
+
+#show-click-le-wagon:hover {
+  border: none;
+  transition: 0.4s;
+}
+
+@media (max-width: 1000px) {
+  #le-wagon-show {
+    padding-bottom: 24px;
   }
-}*/
+}
+
+@media (max-width: 1000px) {
+  .show-btn-lse {
+    width: 5%;
+    margin-bottom: 12px;
+  }
+  .show-btn-le-wagon {
+    width: 5%;
+    margin-bottom: 12px;
+  }
+}
 
 
 

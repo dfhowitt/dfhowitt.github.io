@@ -17,6 +17,7 @@
 .skills-icons p {
   margin-top: 16px;
   font-size: 16px;
+  margin-bottom: 0px;
 }
 
 .skills-icons figcaption {
@@ -34,7 +35,7 @@
   .skills-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 20px;
   }
 }
 
