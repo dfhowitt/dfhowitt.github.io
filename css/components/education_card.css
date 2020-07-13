@@ -38,6 +38,10 @@
   align-items: center;
 }
 
+.education-header a {
+  font-size: 20px;
+}
+
 .education-lse img {
   margin-right: 4px;
 }

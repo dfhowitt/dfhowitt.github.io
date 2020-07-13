@@ -1,16 +1,62 @@
-@media (min-width: 1000px) {
+@media (min-width: 100px) {
   .experience-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 32px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px 16px;
+  }
+  .experience-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
   }
 }
 
 .experience-card {
-  font-size: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+/*.experience img {
+  width: 100%;
+  height: auto;
+}*/
+/*
+.experience-card {
+  background: white;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 12px;
+  height: 240px;
 }
 
 .experience-card img {
-  height: 30px;
-  margin-bottom: 8px;
+  height: 80px;
+  margin: auto;
+  width: 100px;
+}*/
+
+.experience-card h5 {
+  font-size: 30px;
+  color: black;
+  margin: auto;
+}
+/*
+.experience-commerzbank {
+  background-image: url('../../images/commerzbank.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.experience-lse {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/LSE_Logo.svg');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 240px;
+}
+*/
 }
