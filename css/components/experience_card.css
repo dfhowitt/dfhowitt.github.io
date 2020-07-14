@@ -1,62 +1,256 @@
-@media (min-width: 100px) {
-  .experience-container {
+/*@media (min-width: 1000px) {*/
+
+.about-experience {
+  background: transparent;
+}
+
+.experience-card-qadre {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-card-commerzbank {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-card-lse {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-card-zyen {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-card-hsbc {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-card-prospect {
+  padding: 12px 0px 12px 0px;
+  background: transparent;
+}
+
+.experience-header {
+  justify-content: space-around;
+  background: white;
+  padding: 16px 16px 16px 16px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 3px 3px rgba(136,136,136,0.8);
+}
+
+.experience-card-qadre .experience-header {
+  height: 212px;
+}
+
+.experience-card-prospect .experience-header {
+  height: 212px;
+}
+
+.experience-card-qadre img {
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+
+.experience-card-prospect img {
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+
+.experience-card-commerzbank .experience-header {
+  height: 212px;
+}
+
+.experience-card-hsbc .experience-header {
+  height: 212px;
+}
+
+.experience-card-commerzbank img {
+  height: 140px;
+  display: block;
+  margin: auto;
+}
+
+.experience-card-hsbc img {
+  height: 140px;
+  display: block;
+  margin: auto;
+}
+
+.experience-card-lse .experience-header {
+  height: 212px;
+}
+
+.experience-card-zyen .experience-header {
+  height: 212px;
+}
+
+.experience-card-lse img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+.experience-card-zyen img {
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+
+
+@media (max-width: 991px) {
+  .experience-container-sm {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 16px 16px;
+    grid-template-columns: 1fr;
   }
-  .experience-header img {
+  .experience-container-md, .experience-container-lg {
+    display: none;
+  }
+}
+
+/*@media (min-width: 768px) and (max-width: 991px) {
+  .experience-container-md {
+    display: grid;
     width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+  .experience-container-sm, .experience-container-lg {
+    display: none;
+  }
+}*/
+
+@media (min-width: 992px) {
+  .experience-container-md {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+  .experience-container-sm, .experience-container-lg {
+    display: none;
   }
 }
 
-.experience-card {
-  background-color: white;
-  border-radius: 8px;
+
+.qadre-hide {
+  display: none;
 }
-/*.experience img {
-  width: 100%;
-  height: auto;
-}*/
-/*
-.experience-card {
+
+.experience-card-qadre:hover .qadre-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
+}
+
+.experience-card-qadre:hover img {
+  display: none;
+}
+
+.experience-card-qadre:hover .experience-header {
   background: white;
-  margin: auto;
-  width: 50%;
-  margin-bottom: 12px;
-  height: 240px;
-}
-
-.experience-card img {
-  height: 80px;
-  margin: auto;
-  width: 100px;
-}*/
-
-.experience-card h5 {
-  font-size: 30px;
   color: black;
-  margin: auto;
-}
-/*
-.experience-commerzbank {
-  background-image: url('../../images/commerzbank.jpg');
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
+  opacity: 1;
 }
 
-.experience-lse {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/LSE_Logo.svg');
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 240px;
+.commerzbank-hide {
+  display: none;
 }
-*/
+
+.experience-card-commerzbank:hover .commerzbank-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
 }
+
+.experience-card-commerzbank:hover img {
+  display: none;
+}
+
+.experience-card-commerzbank:hover .experience-header {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+.lse-hide {
+  display: none;
+}
+
+.experience-card-lse:hover .lse-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
+}
+
+.experience-card-lse:hover img {
+  display: none;
+}
+
+.experience-card-lse:hover .experience-header {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+.zyen-hide {
+  display: none;
+}
+
+.experience-card-zyen:hover .zyen-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
+}
+
+.experience-card-zyen:hover img {
+  display: none;
+}
+
+.experience-card-zyen:hover .experience-header {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+.hsbc-hide {
+  display: none;
+}
+
+.experience-card-hsbc:hover .hsbc-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
+}
+
+.experience-card-hsbc:hover img {
+  display: none;
+}
+
+.experience-card-hsbc:hover .experience-header {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+.prospect-hide {
+  display: none;
+}
+
+.experience-card-prospect:hover .prospect-hide {
+  display: block;
+  padding: 0px 16px 0px 16px;
+}
+
+.experience-card-prospect:hover img {
+  display: none;
+}
+
+.experience-card-prospect:hover .experience-header {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+
