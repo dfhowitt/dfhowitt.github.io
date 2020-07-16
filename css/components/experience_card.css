@@ -39,15 +39,15 @@
   background: white;
   padding: 16px 16px 16px 16px;
   border-radius: 16px;
-  box-shadow: 3px 3px 3px 3px rgba(136,136,136,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .experience-card-qadre .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-prospect .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-qadre img {
@@ -63,11 +63,11 @@
 }
 
 .experience-card-commerzbank .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-hsbc .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-commerzbank img {
@@ -83,11 +83,11 @@
 }
 
 .experience-card-lse .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-zyen .experience-header {
-  height: 212px;
+  height: 192px;
 }
 
 .experience-card-lse img {
@@ -103,7 +103,7 @@
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .experience-container-sm {
     display: grid;
     width: 100%;
@@ -132,12 +132,12 @@
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
+    font-size: 12px;
   }
   .experience-container-sm, .experience-container-lg {
     display: none;
   }
 }
-
 
 .qadre-hide {
   display: none;
@@ -155,7 +155,6 @@
 .experience-card-qadre:hover .experience-header {
   background: white;
   color: black;
-  opacity: 1;
 }
 
 .commerzbank-hide {

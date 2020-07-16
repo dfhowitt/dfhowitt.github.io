@@ -10,6 +10,11 @@
   z-index: 1;
 }
 
+/*.navbar-left a {
+  font-size: 32px;
+}
+*/
+
 .dropdown {
   display: none;
 }

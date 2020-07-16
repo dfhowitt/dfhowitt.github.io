@@ -1,17 +1,12 @@
-/*@media (min-width: 1000px) {
-  .education-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
-  }
-}*/
-
 .education-card {
   font-size: 16px;
+  background: transparent;
+  margin: 8px 0px 20px 0px;
 }
 
 .education-card img {
-  height: 30px;
+  margin: 0px 8px 60px 0px;
+  height: 52px;
   margin-bottom: 8px;
 }
 
@@ -22,9 +17,9 @@
   margin-bottom: 8px;
 }
 
-.education-le-wagon img {
+/*.education-le-wagon img {
   margin-left: 4px;
-}
+}*/
 
 .education-le-wagon p {
   margin-bottom: 0px;
@@ -38,70 +33,27 @@
   align-items: center;
 }
 
+.about-education h3 {
+  text-align: center;
+}
+
 .education-header a {
   font-size: 20px;
 }
 
-.education-lse img {
-  margin-right: 4px;
+.education-lse h5 {
+  margin-bottom: 0px;
 }
 
 .education-lse p {
   margin-bottom: 0px;
 }
 
-.show-btn-lse {
-/*  margin: auto;
-  width: 7%;*/
-  margin-bottom: 12px;
-  padding: 4px;
-}
-
-#show-click-lse {
-  border: none;
-  background: transparent;
-  color: black;
-  border-radius: 4px;
-  opacity: 0.64;
-  font-size: 16px;
-  padding: 4px;
-  width: 40px;
-  margin-bottom: 8px;
-}
-
-#show-click-lse:hover {
-  border: none;
-}
-
-.show-btn-le-wagon {
-/*  margin: auto;
-  width: 7%;*/
-  margin-bottom: 12px;
-  padding: 4px;
-}
-
-#show-click-le-wagon {
-  border: none;
-  background: transparent;
-  color: black;
-  border-radius: 4px;
-  opacity: 0.64;
-  font-size: 16px;
-  padding: 4px;
-  width: 40px;
-  margin-bottom: 8px;
-}
-
-#show-click-le-wagon:hover {
-  border: none;
-  transition: 0.4s;
-}
-
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
   #le-wagon-show {
     padding-bottom: 24px;
   }
-}
+}*/
 
 /*@media (max-width: 1000px) {
   .show-btn-lse {
@@ -114,5 +66,18 @@
   }
 }*/
 
+@media (min-width: 1000px) {
+  .education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+  .about-education h3 {
+  text-align: left;
+  }
+  .about-education hr {
+    display: none;
+  }
+}
 
 

@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    <title>Profile</title>
-<!--     <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
- -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -37,7 +35,7 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-left">
-        <a href="#top">Daniel Howitt</a>
+        <a href="#top", style="font-size: 24px">Daniel Howitt</a>
       </div>
 
       <!-- Dropdown appearing on mobile only -->
@@ -66,10 +64,50 @@
       </div>
       <hr>
       <div id="services">
-        <h1>Services</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <h1>Services</h1>
+        <div class="fullstack-content mt-3">
+          <div class="card-service">
+            <img src='https://res.cloudinary.com/dezrxo3qo/image/upload/v1593185562/dhowitt/fullstack_myjrht.jpg'/>
+            <div class="card-service-infos">
+              <h2>Web Development</h2>
+              <h5>With my programming skills and acute business acumen, I offer my services from planning to execution and deployment. Maintenance, support and consultancy provided.</h5>
+              <div class="scroll-icon mb-1", style="text-align: center; font-size: 24px;">
+                <i class="fas fa-chevron-down", id="small-screen-icon-no-btn"></i>
+                <i class="fas fa-chevron-down btn", id="fullstack-show-btn"></i>
+              </div>
+              <div class="fullstack-hide", style="display: none;">
+                <div class="service-card">
+                  <div class="service-title-icon d-flex">
+                    <i class="fas fa-palette"></i>
+                    <h3>Front-end design</h3>
+                  </div>
+                  <h5>Interactive and thoughtful design thinking is imperative for any business with an online presence. Get in touch to see how I can build or improve the design of your website.</h5>
+                </div>
+                <div class="service-card">
+                  <div class="service-title-icon d-flex">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Enterprise systems</h3>
+                  </div>
+                  <h5>Interacting with legacy systems and processes both physical and digital can hinder workflow and cause business-wide inefficiencies. I will work closely with you so that we can assess and map out together an effective enterprise management system for your orders, assets or processes built with a user-friendly interface.</h5>
+                </div>
+                <div class="service-card">
+                  <div class="service-title-icon d-flex">
+                    <i class="fab fa-sellsy"></i>
+                    <h3>E-commerce</h3>
+                  </div>
+                  <h5>Whether you are an established retailer looking to move online or just starting your boutique retail business, I can build out an end-to-end platform that will resonate with your customer base. Built-in management solutions are implemented that will give you visibility and control in an easy-to-use manner.</h5>
+                </div>
+                <div class="service-card">
+                  <div class="service-title-icon d-flex">
+                    <i class="fas fa-crosshairs"></i>
+                    <h3>Industry specific solutions</h3>
+                  </div>
+                  <h5>Having built multiple web-apps for my own projects, I can tailor my services to suit your business's specific requirements and take your idea into production.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <hr>
       <div id="about">
@@ -146,7 +184,7 @@
         <hr>
 
         <div class="about-experience">
-          <h3>Experience</h3>
+          <h3 style="text-align: center; font-size: 28px">Experience</h3>
           <!-- For small devices-->
           <div class="experience-container-sm">
             <div class="experience-card-qadre">
@@ -155,8 +193,8 @@
                 <div class="qadre-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">Qadre | Finance Associate | 1 year</h3>
                    <p style="font-size: 16px;">I was responsible for the financial modelling of projects,
-                  analysing internal budgets and building a company wide ROI model. I also led the research team,
-                  consulted on multiple projects, and helped design blockchain solutions. As part of the business
+                  analysing internal budgets and building a company wide ROI model. I also led the research team and
+                  consulted on multiple projects to help design blockchain solutions. As part of the business
                   development team I attended events and gave lectures to Master's and MBA Students at the French Chamber of Commerce.
                   </p>
                 </div>
@@ -165,45 +203,70 @@
             <div class="experience-card-commerzbank">
               <div class="experience-header d-flex">
                 <img src="images/commerzbank.png">
-                <div class="commerzbank-hide">
+                <div class="commerzbank-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">Commerzbank | Credit Risk Intern | 2 months</h3>
-                  <p style="font-size: 16px"></p>
+                  <p style="font-size: 16px">
+                  I led on two major credit reports and three smaller reports,
+                  evaluating the credit risk of over €250mn in loans.
+                  One of the major credit reports was on the division’s largest client -
+                  I was commended for my work and presented to the Sub Credit Committee based in Frankfurt.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="experience-card-lse">
               <div class="experience-header d-flex">
                 <img src="images/lse.png">
-                 <div class="lse-hide">
+                 <div class="lse-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">LSE | Econometrics Tutor | 8 months</h3>
-                  <p style="font-size: 16px"></p>
+                  <p style="font-size: 16px">
+                  I met 5 tutees every week to help them with course material and problem sets
+                  in preparation for weekly tests and the end of year exam. Each tutee achieved
+                  first class grades in the subject.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="experience-card-zyen">
               <div class="experience-header d-flex">
                 <img src="https://www.zyen.com/media/images/ZYonWhtT.original.png">
-                <div class="zyen-hide">
+                <div class="zyen-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">Z/Yen | Research Intern | 1 month</h3>
-                  <p style="font-size: 16px"></p>
+                  <p style="font-size: 16px">
+                  I coordinated a large research project which involved gathering information
+                  and analysing data to be included in the final report.
+                  After completing the project I produced some of my own research on the relationship
+                  between accounting practices and pension liabilities and wrote an
+                  <a href="https://www.longfinance.net/news/pamphleteers/understanding-the-pension-crisis/", target="blank">article</a>
+                  for the company’s blog.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="experience-card-hsbc">
               <div class="experience-header d-flex">
                 <img src="images/hsbc.png">
-                <div class="hsbc-hide">
+                <div class="hsbc-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">HSBC | Operational Risk Intern | 1 month</h3>
-                  <p style="font-size: 16px"></p>
+                  <p style="font-size: 16px">
+                  I delivered two reports and presentations to the Chief Risk Officer for
+                  Global Banking and Markets and the Operational Risk Management team.
+                  I interviewed a number of trading floor staff and risk executives alongside
+                  conducting my own research.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="experience-card-prospect">
               <div class="experience-header d-flex">
                 <img src="images/prospect.png">
-                <div class="prospect-hide">
+                <div class="prospect-hide", style="overflow: scroll;">
                   <h3 style="font-size: 20px">Prospect Co., Ltd. | Research Intern | 1 month</h3>
-                  <p style="font-size: 16px"></p>
+                  <p style="font-size: 16px">
+                    I helped the investment team by gathering financial data and analysing
+                    potential investments. I presented my research to the investment team regularly
+                    and was involved in the structuring and execution of investments.
+                  </p>
                 </div>
               </div>
             </div>
@@ -218,8 +281,8 @@
                   <div class="qadre-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">Qadre | Finance Associate | 1 year</h3>
                     <p style="font-size: 16px;">I was responsible for the financial modelling of projects,
-                    analysing internal budgets and building a company wide ROI model. I also led the research team,
-                    consulted on multiple projects, and helped design blockchain solutions. As part of the business
+                    analysing internal budgets and building a company wide ROI model. I also led the research team and
+                    consulted on multiple projects to help design blockchain solutions. As part of the business
                     development team I attended events and gave lectures to Master's and MBA Students at the French Chamber of Commerce.
                     </p>
                   </div>
@@ -228,18 +291,27 @@
               <div class="experience-card-lse">
                 <div class="experience-header d-flex">
                   <img src="images/lse.png">
-                  <div class="lse-hide">
+                  <div class="lse-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">LSE | Econometrics Tutor | 8 months</h3>
-                    <p style="font-size: 16px"></p>
+                    <p style="font-size: 16px">
+                    I met 5 tutees every week to help them with course material and problem sets
+                    in preparation for weekly tests and the end of year exam. Each tutee achieved
+                    first class grades in the subject.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="experience-card-hsbc">
                 <div class="experience-header d-flex">
                   <img src="images/hsbc.png">
-                  <div class="hsbc-hide">
+                  <div class="hsbc-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">HSBC | Operational Risk Intern | 1 month</h3>
-                    <p style="font-size: 16px"></p>
+                    <p style="font-size: 16px">
+                    I delivered two reports and presentations to the Chief Risk Officer for
+                    Global Banking and Markets and the Operational Risk Management team.
+                    I interviewed a number of trading floor staff and risk executives alongside
+                    conducting my own research.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -248,46 +320,13 @@
               <div class="experience-card-commerzbank">
                 <div class="experience-header d-flex">
                   <img src="images/commerzbank.png">
-                  <div class="commerzbank-hide">
+                  <div class="commerzbank-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">Commerzbank | Credit Risk Intern | 2 months</h3>
-                    <p style="font-size: 16px"></p>
-                  </div>
-                </div>
-              </div>
-               <div class="experience-card-zyen">
-                <div class="experience-header d-flex">
-                  <img src="https://www.zyen.com/media/images/ZYonWhtT.original.png">
-                  <div class="zyen-hide">
-                    <h3 style="font-size: 20px">Z/Yen | Research Intern | 1 month</h3>
-                    <p style="font-size: 16px"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="experience-card-prospect">
-                <div class="experience-header d-flex">
-                  <img src="images/prospect.png">
-                  <div class="prospect-hide">
-                    <h3 style="font-size: 20px">Prospect Co., Ltd. | Research Intern | 1 month</h3>
-                    <p style="font-size: 16px"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- For large devices-->
-          <div class="experience-container-lg">
-            <div class="experience-column-1">
-              <div class="experience-card-qadre">
-                <div class="experience-header d-flex">
-                  <img src="images/qadre.png">
-                  <div class="qadre-hide", style="overflow: scroll;">
-                    <h3 style="font-size: 20px">Qadre | Finance Associate | 1 year</h3>
-                    <p style="font-size: 16px;">I was responsible for the financial modelling of projects,
-                    analysing internal budgets and building a company wide ROI model. I also led the research team,
-                    consulted on multiple projects, and helped design blockchain solutions. As part of the business
-                    development team I attended events and gave lectures to Master's and MBA Students at the French Chamber of Commerce.
+                    <p style="font-size: 16px">
+                    I led on two major credit reports and three smaller reports,
+                    evaluating the credit risk of over €250mn in loans.
+                    One of the major credit reports was on the division’s largest client -
+                    I was commended for my work and presented to the Sub Credit Committee based in Frankfurt.
                     </p>
                   </div>
                 </div>
@@ -295,51 +334,29 @@
                <div class="experience-card-zyen">
                 <div class="experience-header d-flex">
                   <img src="https://www.zyen.com/media/images/ZYonWhtT.original.png">
-                  <div class="zyen-hide">
+                  <div class="zyen-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">Z/Yen | Research Intern | 1 month</h3>
-                    <p style="font-size: 14px"></p>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="experience-column-2">
-              <div class="experience-card-commerzbank">
-                <div class="experience-header d-flex">
-                  <img src="images/commerzbank.png">
-                  <div class="commerzbank-hide">
-                    <h3 style="font-size: 20px">Commerzbank | Credit Risk Intern | 2 months</h3>
-                    <p style="font-size: 14px"></p>
+                    <p style="font-size: 16px">
+                    I coordinated a large research project which involved gathering information
+                    and analysing data to be included in the final report.
+                    After completing the project I produced some of my own research on the relationship
+                    between accounting practices and pension liabilities and wrote an
+                    <a href="https://www.longfinance.net/news/pamphleteers/understanding-the-pension-crisis/", target="blank">article</a>
+                    for the company’s blog.
+                    </p>
                   </div>
-                </div>
-              </div>
-              <div class="experience-card-hsbc">
-                <div class="experience-header d-flex">
-                  <img src="images/hsbc.png">
-                  <div class="hsbc-hide">
-                    <h3 style="font-size: 20px">HSBC | Operational Risk Intern | 1 month</h3>
-                    <h5 style="font-size: 18px">Operational Risk Intern</h5>
-                    <p style="font-size: 14px"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="experience-column-3">
-              <div class="experience-card-lse">
-                <div class="experience-header d-flex">
-                  <div class="lse-hide">
-                    <h3 style="font-size: 20px">LSE | Econometrics Tutor | 8 months</h3>
-                    <h5 style="font-size: 18px">Econometrics Tutor</h5>
-                    <p style="font-size: 14px"></p>
-                  </div>
-                  <img src="images/lse.png">
                 </div>
               </div>
               <div class="experience-card-prospect">
                 <div class="experience-header d-flex">
                   <img src="images/prospect.png">
-                  <div class="prospect-hide">
+                  <div class="prospect-hide", style="overflow: scroll;">
                     <h3 style="font-size: 20px">Prospect Co., Ltd. | Research Intern | 1 month</h3>
-                    <p style="font-size: 14px"></p>
+                    <p style="font-size: 16px">
+                      I helped the investment team by gathering financial data and analysing
+                      potential investments. I presented my research to the investment team regularly
+                      and was involved in the structuring and execution of investments.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -348,21 +365,19 @@
         </div>
         <hr>
         <div class="about-education mt-4">
-          <h3>Education</h3>
+          <h3 style="font-size: 28px">Education</h3>
           <div class="education-container">
             <div class="education-card">
               <div class="education-le-wagon">
                 <div class="education-header d-flex">
-                  <a href="https://www.lewagon.com/", target="blank">Le Wagon</a>
                   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png"/>
-                  <i class="fas fa-chevron-down btn", id="show-click-le-wagon", style="font-size: 24px"></i>
+                  <a href="https://www.lewagon.com/", target="blank", style="font-size: 24px;">Le Wagon</a>
                 </div>
-              </div>
-              <div id="le-wagon-show", style="display: none;">
                 <p>Le Wagon is the best ranked coding bootcamp worldwide on Switchup,
                 and teaches the fundamentals to become a full stack web developer over 9
                 intense weeks.
                 </p>
+                <br>
                 <p>The syllabus covered: core concepts of object-oriented programming (OOP),
                 software structuring following design patterns like MVC,
                 3rd party service integration using an API or scraping HTML data,
@@ -370,30 +385,35 @@
                 UI development following atomic design framework,
                 CSS library set-up using recent techniques like flex-box or CSS grid,
                 ES6 as a second programming language and
-                test Driven Development (TDD) to cover application’s code with unit tests.</p>
+                test Driven Development (TDD) to cover application’s code with unit tests.
+                </p>
               </div>
             </div>
+            <hr>
             <div class="education-card">
               <div class="education-lse">
                 <div class="education-header d-flex">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/LSE_Logo.svg"/><h5>BSc Management 2:1 Honours</h5>
-                  <i class="fas fa-chevron-down btn", id="show-click-lse", style="font-size: 24px"></i>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/LSE_Logo.svg">
+                  <div class="lse-header mb-2">
+                    <h5 style="font-size: 24px;">London School of Economics</h5>
+                    <p><strong>BSc Management 2:1 Honours</strong></p>
+                  </div>
                 </div>
-              </div>
-              <div id="lse-show", style="display: none;">
-                <p>I achieved firsts in Mathematics, Statistics, Econometrics and Information Systems.
+                <p>
+                I achieved firsts in Mathematics, Statistics, Econometrics and Information Systems.
                 I was also an Econometrics peer tutor in my second year and Futsal team captain.
+                </p>
+                <br>
+                <p>
                 My extracurricular activities included being part of the Futsal Committee where
                 I organised events as part of the Athletics Union and
                 helped the club grow from 12 to 67 members.
-                </p>
-                <p>
                 In 2017 I took part in the RAG challenge, travelling to Stockholm without spending any money
                 and raising > £1,000 for
                 <a href="https://www.studentminds.org.uk/", target="blank">Student Minds</a> in the process.
                 I also contested in the LSE Hackathon Challenge and spent 48 hours developing a FinTech business
                 which I pitched to a room of entrepreneurs and executives.
-              </p>
+                </p>
               </div>
             </div>
           </div>
@@ -436,41 +456,23 @@
     </script>
     <script type="text/javascript">
       var typed = new Typed('.typed', {
-        strings: ["First Sentence.", "Hello! How can I help? "],
-        typeSpeed: 65,
+        strings: ["First Sentence.", "Hello, I'm Daniel! <br> How can I help? "],
+        typeSpeed: 35,
         // onComplete: function(self) { self.cursor.remove() }
       });
     </script>
-    <script type="text/javascript">
-    document.querySelector("#show-click-le-wagon").addEventListener("click", function() {
-      var showDiv = document.querySelector("#le-wagon-show");
-      if (showDiv.style.display === "none") {
-        showDiv.style.display = "block";
-        document.querySelector("#show-click-le-wagon").style.color = "#DC143C";
-        // document.querySelector("#show-click-lse").style.background-color = "black";
-      }
-      else {
-        showDiv.style.display = "none";
-        document.querySelector("#show-click-le-wagon").style.color = "black";
-      }
-    });
-    document.querySelector("#show-click-lse").addEventListener("click", function() {
-      var showDiv = document.querySelector("#lse-show");
-      if (showDiv.style.display === "none") {
-        showDiv.style.display = "block";
-        document.querySelector("#show-click-lse").style.color = "#DC143C";
-        // document.querySelector("#show-click-lse").style.background-color = "black";
-      }
-      else {
-        showDiv.style.display = "none";
-        document.querySelector("#show-click-lse").style.color = "black";
-      }
-    });
-    </script>
-<!--     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-      AOS.init( {
-        duration: 600,
+    <script>
+      document.getElementById("fullstack-show-btn").addEventListener("click", function() {
+        var showDiv = document.querySelector(".fullstack-hide");
+        if (showDiv.style.display === "none") {
+          showDiv.style.display = "block";
+          document.querySelector('.card-service-top').style.display = "flex";
+
+        }
+        else {
+          showDiv.style.display = "none";
+        }
       });
-    </script> -->
+    </script>
   </body>
 </html>
