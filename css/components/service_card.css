@@ -5,6 +5,77 @@
 }*/
 
 .card-service {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-service > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-service h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-service h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0px 0px 8px 8px;
+}
+
+.card-service h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.card-service h5 {
+  font-size: 16px;
+  opacity: .7;
+  line-height: 1.6;
+}
+
+.card-service .card-service-infos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 16px 16px 0px 16px;
+}
+
+.card-service-infos-header-left h5 {
+  margin: 8px 0px 16px 0px;
+}
+
+.card-service-infos-header i {
+  margin-left: 8px;
+  padding: 8px;
+  border: 2px solid rgba(67, 198, 198, 0.7);
+  border-radius: 50%
+}
+
+.card-service hr {
+  margin-top: 0px;
+}
+
+.fullstack-hide {
+  padding: 0px 16px 0px 16px;
+}
+
+.finance-hide {
+  padding: 0px 16px 0px 16px;
+}
+
+.consulting-hide {
+  padding: 0px 16px 0px 16px;
+}
+
+/*.card-service {
   height: 204px;
   display: flex;
   border-radius: 2px;
@@ -31,10 +102,7 @@
   margin-bottom: 8px;
 }
 
-.card-service h3 {
-  margin-bottom: 0px;
-  margin-top: 8px
-}
+
 
 .card-service h5 {
   font-size: 16px;
@@ -57,9 +125,9 @@
 .card-service-infos {
   position: relative;
   padding: 12px;
-}
+}*/
 
-@media (max-width: 528px) {
+/*@media (max-width: 528px) {
   .card-service img {
     height: 100%;
     position: sticky;
@@ -68,21 +136,6 @@
     border-radius: 2px;
   }
 }
+*/
 
-@media (max-width: 768px) {
-  .fullstack-hide  {
-    display: block !important;
-  }
-}
 
-@media (max-width: 528px) {
-  #fullstack-show-btn {
-    display: none ;
-  }
-}
-
-@media (min-width: 528px) {
-  #small-screen-icon-no-btn {
-    display: none;
-  }
-}
