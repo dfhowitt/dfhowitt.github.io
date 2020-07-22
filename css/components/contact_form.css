@@ -6,21 +6,25 @@
   margin-top: 40px;
 }
 
-.form-container {
+.form-top #fname {
+  margin-right: 24px;
+}
+
+/*.form-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 20px;
-  /*border: 1px solid #3b6978;*/
-  padding: 30px;
+  border: 1px solid #3b6978;
+  padding: 8px;
   margin-bottom: 20px;
   background-color: #3b6978;
   color: #e2e2e2;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 4px 7px 7px 0px rgba(0,0,0,0.25);
-}
+}*/
 
 .contact-card-container {
   display: flex;

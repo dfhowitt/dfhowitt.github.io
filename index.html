@@ -65,7 +65,8 @@
       <!-- Services Section -->
       <div id="services", class="services-anchor">
       <hr>
-      <h1>Services</h1>
+      <h1 style='text-align: center'>Services</h1>
+      <hr>
         <!-- Fullstack Services -->
         <div class="fullstack-content mt-3">
           <div class="card-service">
@@ -209,9 +210,10 @@
       <!-- About Section -->
       <div id="about", class="about-anchor">
       <hr>
-        <div class="about-header">
-          <h1>About</h1>
-        </div>
+      <div class="about-header">
+        <h1 style='text-align: center'>About</h1>
+      </div>
+      <hr>
         <div class="about-intro">
           <div class="about-intro-left">
             <p>Born in Tokyo, raised in London and educated at LSE, I have travelled and worked
@@ -283,8 +285,7 @@
         <hr>
 
         <div class="about-experience">
-          <h3 style="font-size: 28px">Experience</h3>
-          <!-- For small devices-->
+          <!-- Chronological order for small devices-->
           <div class="experience-container-sm">
             <div class="experience-card-qadre">
               <div class="experience-header d-flex">
@@ -371,7 +372,7 @@
             </div>
           </div>
 
-          <!-- For medium devices-->
+          <!-- Chronological order for medium devices and above-->
           <div class="experience-container-md">
             <div class="experience-column-1">
               <div class="experience-card-qadre">
@@ -464,7 +465,6 @@
         </div>
         <hr>
         <div class="about-education mt-4">
-          <h3 style="font-size: 28px">Education</h3>
           <div class="education-container">
             <div class="education-card">
               <div class="education-le-wagon">
@@ -520,17 +520,19 @@
       </div>
       <div id="contact", class="contact-anchor">
       <hr>
-        <h1>Contact</h1>
-        <div class="contact-form">
-          <form action="https://formspree.io/mpzykaol" method="POST" id="contact-form">
+      <h1 style='text-align: center'>Contact</h1>
+      <hr>
+      <div class="contact-form">
+        <form action="https://formspree.io/mpzykaol" method="POST" id="contact-form">
+          <div class="form-top d-flex">
             <input type="text" id="fname" name="firstname" required placeholder="First name">
             <input type="text" id="lname" name="lastname" required placeholder="Last name">
-            <input type="text" id="email" name="email" required placeholder="Your email">
-            <textarea id="message" name="message" required placeholder="Your enquiry" style="height:200px"></textarea>
-            <input type="submit" id="contact-submit-button" value="Send">
-            <p class="contact-send-status" id="contact-form-status"></p>
-          </form>
-        </div>
+          </div>
+          <input type="text" id="email" name="email" required placeholder="Your email">
+          <textarea id="message" name="message" required placeholder="Your enquiry" style="height:200px"></textarea>
+          <input type="submit" id="contact-submit-button" value="Send">
+          <p class="contact-send-status" id="contact-form-status"></p>
+        </form>
       </div>
       <hr>
       <div class="footer mb-4">
@@ -577,7 +579,7 @@
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("fullstack-show-btn").style.border = "2px solid rgba(67, 198, 198, 0.7)"
+          document.getElementById("fullstack-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
       document.getElementById("finance-show-btn").addEventListener("click", function() {
@@ -588,7 +590,7 @@
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("finance-show-btn").style.border = "2px solid rgba(67, 198, 198, 0.7)"
+          document.getElementById("finance-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
       document.getElementById("consulting-show-btn").addEventListener("click", function() {
@@ -599,7 +601,7 @@
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("consulting-show-btn").style.border = "2px solid rgba(67, 198, 198, 0.7)"
+          document.getElementById("consulting-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
     </script>
