@@ -4,6 +4,7 @@
   background-position: center center;
   width: 100%;
   min-height: 100%;
+  -webkit-background-size: cover;
   align-items: center;
   justify-content: space-around;
   text-align: center;
