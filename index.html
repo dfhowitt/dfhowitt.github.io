@@ -127,7 +127,7 @@
         <!-- Financial Services -->
         <div class="finance-content mt-3">
           <div class="card-service">
-            <img src='https://res.cloudinary.com/dezrxo3qo/image/upload/v1595249827/dhowitt/markus-spiske-5gGcn2PRrtc-unsplash_wdiair.jpg'/>
+            <img src='https://res.cloudinary.com/dezrxo3qo/image/upload/v1593380655/dhowitt/contact_ehrtwk.jpg'/>
             <div class="card-service-infos">
               <div class='card-service-infos-header'>
                 <div class="card-service-infos-header-left">
@@ -571,37 +571,40 @@
       });
     </script>
     <script>
-      document.getElementById("fullstack-show-btn").addEventListener("click", function() {
+      var fullstackButton = document.getElementById("fullstack-show-btn")
+      fullstackButton.addEventListener("click", function() {
         var showDiv = document.querySelector(".fullstack-hide");
         if (showDiv.style.display === "none") {
           showDiv.style.display = "block";
-          document.getElementById("fullstack-show-btn").style.border = "2px solid rgba(220,20,60, 0.5)"
+          fullstackButton.style.border = "2px solid rgba(220,20,60, 0.5)"
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("fullstack-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
+          fullstackButton.style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
-      document.getElementById("finance-show-btn").addEventListener("click", function() {
+      var financeButton = document.getElementById("finance-show-btn")
+      financeButton.addEventListener("click", function() {
         var showDiv = document.querySelector(".finance-hide");
         if (showDiv.style.display === "none") {
           showDiv.style.display = "block";
-          document.getElementById("finance-show-btn").style.border = "2px solid rgba(220,20,60, 0.5)"
+          financeButton.style.border = "2px solid rgba(220,20,60, 0.5)"
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("finance-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
+          financeButton.style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
-      document.getElementById("consulting-show-btn").addEventListener("click", function() {
+      var consultingButton = document.getElementById("consulting-show-btn")
+      consultingButton.addEventListener("click", function() {
         var showDiv = document.querySelector(".consulting-hide");
         if (showDiv.style.display === "none") {
           showDiv.style.display = "block";
-          document.getElementById("consulting-show-btn").style.border = "2px solid rgba(220,20,60, 0.5)"
+          consultingButton.style.border = "2px solid rgba(220,20,60, 0.5)"
         }
         else {
           showDiv.style.display = "none";
-          document.getElementById("consulting-show-btn").style.border = "2px solid rgba(69,160,73, 0.7)"
+          consultingButton.style.border = "2px solid rgba(69,160,73, 0.7)"
         }
       });
     </script>
