@@ -1,10 +1,10 @@
 .banner {
-  background-image: url('../../images/me.JPG');
-  background-position: center center fixed;
+  background: url('../../images/me.JPG');
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size:100% 100%;
+  background-size: cover;
   width: 100%;
   min-height: 100%;
   align-items: center;
