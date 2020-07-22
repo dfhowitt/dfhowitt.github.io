@@ -62,9 +62,9 @@
       <div class="quote">
         <p><i>“The gales of creative destruction" ... the incessant product and process innovation mechanism. -- Joseph A. Schumpeter</i></p>
       </div>
-      <hr>
       <!-- Services Section -->
-      <div id="services">
+      <div id="services", class="services-anchor">
+      <hr>
       <h1>Services</h1>
         <!-- Fullstack Services -->
         <div class="fullstack-content mt-3">
@@ -204,10 +204,11 @@
             </div>
           </div>
         </div>
-      <!-- About Section -->
       </div>
+
+      <!-- About Section -->
+      <div id="about", class="about-anchor">
       <hr>
-      <div id="about">
         <div class="about-header">
           <h1>About</h1>
         </div>
@@ -282,7 +283,7 @@
         <hr>
 
         <div class="about-experience">
-          <h3 style="text-align: center; font-size: 28px">Experience</h3>
+          <h3 style="font-size: 28px">Experience</h3>
           <!-- For small devices-->
           <div class="experience-container-sm">
             <div class="experience-card-qadre">
@@ -517,10 +518,19 @@
           </div>
         </div>
       </div>
+      <div id="contact", class="contact-anchor">
       <hr>
-      <div id="contact">
         <h1>Contact</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="contact-form">
+          <form action="https://formspree.io/mpzykaol" method="POST" id="contact-form">
+            <input type="text" id="fname" name="firstname" required placeholder="First name">
+            <input type="text" id="lname" name="lastname" required placeholder="Last name">
+            <input type="text" id="email" name="email" required placeholder="Your email">
+            <textarea id="message" name="message" required placeholder="Your enquiry" style="height:200px"></textarea>
+            <input type="submit" id="contact-submit-button" value="Send">
+            <p class="contact-send-status" id="contact-form-status"></p>
+          </form>
+        </div>
       </div>
       <hr>
       <div class="footer mb-4">
@@ -592,6 +602,44 @@
           document.getElementById("consulting-show-btn").style.border = "2px solid rgba(67, 198, 198, 0.7)"
         }
       });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", function() {
+        // get the form elements defined in your form HTML above
+        var form = document.getElementById("contact-form");
+        var button = document.getElementById("contact-submit-button");
+        var status = document.getElementById("contact-form-status");
+        // Success and Error functions for after the form is submitted
+        function success() {
+          form.reset();
+          button.style = "display: none ";
+          status.innerHTML = "Thanks! I'll be in touch soon.";
+        }
+        function error() {
+          status.innerHTML = "Oops! There was a problem. Please try again.";
+        }
+        // handle the form submission event
+        form.addEventListener("submit", function(ev) {
+          ev.preventDefault();
+          var data = new FormData(form);
+          ajax(form.method, form.action, data, success, error);
+        });
+      });
+      // helper function for sending an AJAX request
+      function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType);
+          } else {
+            error(xhr.status, xhr.response, xhr.responseType);
+          }
+        };
+        xhr.send(data);
+      }
     </script>
   </body>
 </html>
