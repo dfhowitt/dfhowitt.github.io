@@ -40,6 +40,10 @@
   line-height: 1.6;
 }
 
+.card-service-infos {
+  overflow: hidden;
+}
+
 .card-service .card-service-infos-header {
   display: flex;
   justify-content: space-between;
@@ -56,22 +60,28 @@
   margin-left: 8px;
   padding: 8px;
   border: 2px solid rgba(69,160,73, 0.8);
-  border-radius: 50%
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .card-service hr {
   margin-top: 0px;
 }
 
-.fullstack-hide {
+.collapse {
+  overflow: hidden;
+  transition: max-height 2s ease-out;
+}
+
+#fullstack-hide {
   padding: 0px 16px 0px 16px;
 }
 
-.finance-hide {
+#finance-hide {
   padding: 0px 16px 0px 16px;
 }
 
-.consulting-hide {
+#consulting-hide {
   padding: 0px 16px 0px 16px;
 }
 

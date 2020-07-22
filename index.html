@@ -44,22 +44,22 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="#quote">Services</a>
           <a href="#about">About</a>
-          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
       <!-- -->
 
       <div class="navbar-right">
+        <a href="#quote">Services</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <div class="container mt-3">
-      <div class="quote">
+      <div id="quote", class="quote-anchor">
         <p><i>“The gales of creative destruction" ... the incessant product and process innovation mechanism. -- Joseph A. Schumpeter</i></p>
       </div>
       <!-- Services Section -->
@@ -72,14 +72,16 @@
           <div class="card-service">
             <img src='https://res.cloudinary.com/dezrxo3qo/image/upload/v1593185562/dhowitt/fullstack_myjrht.jpg'/>
             <div class="card-service-infos">
-              <div class='card-service-infos-header'>
+              <div class='card-service-infos-header', style="overflow: hidden;">
                 <div class="card-service-infos-header-left">
                   <h2>Fullstack Web Development</h2>
                   <h5>With my programming skills and acute business acumen, I offer my services from planning to execution and deployment.</h5>
                 </div>
-                <i class="fas fa-chevron-down btn", id="fullstack-show-btn", style="font-size: 24px;"></i>
+                <div class="service-collapsible">
+                  <i class="fas fa-chevron-down btn", id="fullstack-show-btn", style="font-size: 24px;", data-toggle="collapse" data-target="#fullstack-hide" aria-expanded="false" aria-controls="fullstack-hide"></i>
+                </div>
               </div>
-              <div class="fullstack-hide", style="display: none;">
+              <div class="collapse", id="fullstack-hide">
                 <hr>
                 <div class="service-card">
                   <div class="service-title-icon d-flex">
@@ -136,9 +138,11 @@
                   operational & credit risk, derive complex financial models and provide strategic insight
                   into the profitability of commercial investments.</h5>
                 </div>
-                <i class="fas fa-chevron-down btn", id="finance-show-btn", style="font-size: 24px;"></i>
+                <div class="service-collapsible">
+                  <i class="fas fa-chevron-down btn", id="finance-show-btn", style="font-size: 24px;", data-toggle="collapse" data-target="#finance-hide" aria-expanded="false" aria-controls="fullstack-hide"></i>
+                </div>
               </div>
-              <div class="finance-hide", style="display: none;">
+              <div class='collapse' id="finance-hide">
               <hr>
                 <div class="service-card">
                   <div class="service-title-icon d-flex">
@@ -177,9 +181,11 @@
                   trade finance, post-trade, FMCG, recruitment, sales and corporate administration,
                   I offer different consultancy services depending on your needs.</h5>
                 </div>
-                <i class="fas fa-chevron-down btn", id="consulting-show-btn", style="font-size: 24px;"></i>
+                <div class="service-collapsible">
+                  <i class="fas fa-chevron-down btn", id="consulting-show-btn", style="font-size: 24px;", data-toggle="collapse" data-target="#consulting-hide" aria-expanded="false" aria-controls="fullstack-hide"></i>
+                </div>
               </div>
-              <div class="consulting-hide", style="display: none;">
+              <div class="collapse" id="consulting-hide">
                 <hr>
                 <div class="service-card">
                   <div class="service-title-icon d-flex">
@@ -534,6 +540,12 @@
           <p class="contact-send-status" id="contact-form-status"></p>
         </form>
       </div>
+      <div class="header">
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#ex-content" aria-expanded="false" aria-controls="ex-content"><i class='fas fa-chevron-down'></i></button>
+      </div>
+        <div class="collapse", id='ex-content'>
+          <p>Lorem ipsum...</p>
+        </div>
       <hr>
       <div class="footer mb-4">
         <div class="footer-links">
@@ -570,19 +582,39 @@
         // onComplete: function(self) { self.cursor.remove() }
       });
     </script>
-    <script>
+    <script type="text/javascript">
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+<!--     <script>
       var fullstackButton = document.getElementById("fullstack-show-btn")
-      fullstackButton.addEventListener("click", function() {
-        var showDiv = document.querySelector(".fullstack-hide");
-        if (showDiv.style.display === "none") {
-          showDiv.style.display = "block";
-          fullstackButton.style.border = "2px solid rgba(220,20,60, 0.5)"
+      fullstackButton.addEventListener("click", function () {
+        var showDiv = document.querySelector('.fullstack-hide');
+        if(showDiv.style.opacity == '0') {
+          showDiv.style.opacity = '1';
+          showDiv.style.visibility = 'visible';
+          showDiv.style.height = 'auto';
         }
         else {
-          showDiv.style.display = "none";
-          fullstackButton.style.border = "2px solid rgba(69,160,73, 0.7)"
+          showDiv.style.opacity = '0';
+          showDiv.style.visibility = 'hidden';
+          showDiv.style.height = '0';
         }
-      });
+      })
+    </script> -->
+    <script>
       var financeButton = document.getElementById("finance-show-btn")
       financeButton.addEventListener("click", function() {
         var showDiv = document.querySelector(".finance-hide");

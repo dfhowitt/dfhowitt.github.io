@@ -1,9 +1,12 @@
 .banner {
   background: url('../../images/me.JPG');
   background-size: cover;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -moz-background-position: center center;
   -o-background-size: cover;
+  -o-background-position: center center;
   background-size: cover;
   width: 100%;
   min-height: 100%;
