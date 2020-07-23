@@ -527,10 +527,8 @@
       <div id="contact", class="contact-anchor">
       <hr>
       <h1 style='text-align: center'>Contact</h1>
+      <h3 style='text-align: center'>All enquiries are submitted directly to my inbox. You can also send me a message on <a href="https://www.linkedin.com/in/daniel-howitt-96261810b/">LinkedIn</a>.</h3>
       <hr>
-      <div class="contact-header d-flex justify-content-between">
-        <h3>All enquiries are submitted directly to my inbox. You can also send me a message on <a href="https://www.linkedin.com/in/daniel-howitt-96261810b/">LinkedIn</a>.</h3>
-      </div>
       <div class="contact-form">
         <form action="https://formspree.io/mpzykaol" method="POST" id="contact-form">
           <div class="form-top d-flex">
@@ -577,64 +575,6 @@
         strings: ["First Sentence.", "Hi! I'm Daniel Howitt, <br> how can I help? "],
         typeSpeed: 35,
         // onComplete: function(self) { self.cursor.remove() }
-      });
-    </script>
-    <script type="text/javascript">
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
-<!--     <script>
-      var fullstackButton = document.getElementById("fullstack-show-btn")
-      fullstackButton.addEventListener("click", function () {
-        var showDiv = document.querySelector('.fullstack-hide');
-        if(showDiv.style.opacity == '0') {
-          showDiv.style.opacity = '1';
-          showDiv.style.visibility = 'visible';
-          showDiv.style.height = 'auto';
-        }
-        else {
-          showDiv.style.opacity = '0';
-          showDiv.style.visibility = 'hidden';
-          showDiv.style.height = '0';
-        }
-      })
-    </script> -->
-    <script>
-      var financeButton = document.getElementById("finance-show-btn")
-      financeButton.addEventListener("click", function() {
-        var showDiv = document.querySelector(".finance-hide");
-        if (showDiv.style.display === "none") {
-          showDiv.style.display = "block";
-          financeButton.style.border = "2px solid rgba(220,20,60, 0.5)"
-        }
-        else {
-          showDiv.style.display = "none";
-          financeButton.style.border = "2px solid rgba(69,160,73, 0.7)"
-        }
-      });
-      var consultingButton = document.getElementById("consulting-show-btn")
-      consultingButton.addEventListener("click", function() {
-        var showDiv = document.querySelector(".consulting-hide");
-        if (showDiv.style.display === "none") {
-          showDiv.style.display = "block";
-          consultingButton.style.border = "2px solid rgba(220,20,60, 0.5)"
-        }
-        else {
-          showDiv.style.display = "none";
-          consultingButton.style.border = "2px solid rgba(69,160,73, 0.7)"
-        }
       });
     </script>
     <script type="text/javascript">
