@@ -20,10 +20,11 @@
   align-items: center;
   display: flex;
 }
+
 @media only screen and (max-device-width: 736px) {
-    .banner {
-        background-attachment: scroll;
-    }
+  .banner {
+    background-attachment: scroll;
+  }
 }
 
 .banner-content {
@@ -46,9 +47,6 @@
   }
 }
 
-/* Include when banner picture is responsive on mobile */
-
-/*
 @media (max-width: 600px) {
   .banner-header {
     position: absolute;
@@ -56,17 +54,11 @@
     left: 30;
     width: 112px;
   }
-}*/
+}
 
 .typed {
   font-size: 24px;
   display: inline;
-}
-
-@media (max-width: 736px) {
-  .banner-header {
-    display: none;
-  }
 }
 
 .typed-cursor{
