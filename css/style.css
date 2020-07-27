@@ -36,6 +36,9 @@ body {
   text-align: justify;
 }
 
+a, .s-link {
+  cursor: pointer;
+}
 p {
   font-weight: lighter;
 }
