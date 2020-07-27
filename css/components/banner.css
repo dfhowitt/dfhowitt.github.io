@@ -41,6 +41,9 @@
   }
 }
 
+/* Include when banner picture is responsive on mobile */
+
+/*
 @media (max-width: 600px) {
   .banner-header {
     position: absolute;
@@ -48,15 +51,8 @@
     left: 30;
     width: 112px;
   }
+}*/
 
-}
-
-/*@media (max-height: 500px) {
-  .banner-content {
-    display: none;
-  }
-}
-*/
 .typed {
   font-size: 24px;
   display: inline;
@@ -122,18 +118,6 @@
   font-size: 16px;
 }
 
-/*.banner-header {
-  position: absolute;
-  font-weight: lighter;
-  font-size: 24px;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  margin-left: -160px;
-  margin-top: -280px;
-  z-index: 1;
-}*/
-
 @media (max-width: 640px) {
   .banner-nav .btn {
     display: none;
@@ -145,64 +129,3 @@
     display: none;
   }
 }
-
-/*@media (min-width: 720px) and (max-width: 1100px) {
-  .banner-header {
-    left: 50%;
-    margin-left: -120px;
-    top: 50%;
-    margin-top: -180px;
-    font-size: 18px;
-  }
-}*/
-
-/*@media (min-width: 1200px) {
-  .banner h3 {
-    top: 400;
-    right: 100;
-    font-size: 32px;
-    width: 300px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .banner p {
-    top: 520;
-    right: 100;
-    font-size: 24px;
-  }
-}*/
-
-/*@media (min-width: 640px) and (max-width: 968px) {
-  .banner h3 {
-    bottom: 120;
-    right: 20;
-    font-size: 18px;
-  }
-}*/
-
-
-/*.banner .home-search {
-  z-index: 1;
-}
-
-.banner .title {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #1EDD88;
-  transition: background 0.3s ease;
-}
-
-.btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
-}*/
-
-
