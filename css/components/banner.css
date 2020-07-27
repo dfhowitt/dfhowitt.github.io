@@ -20,6 +20,11 @@
   align-items: center;
   display: flex;
 }
+@media only screen and (max-device-width: 736px) {
+    .banner {
+        background-attachment: scroll;
+    }
+}
 
 .banner-content {
   display: flex;
