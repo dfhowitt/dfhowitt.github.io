@@ -1,3 +1,7 @@
+.experience-header h3 {
+  font-weight: normal;
+}
+
 .card-service {
   overflow: hidden;
   background: white;

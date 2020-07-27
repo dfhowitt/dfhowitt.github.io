@@ -10,10 +10,9 @@
   z-index: 1;
 }
 
-/*.navbar-left a {
-  font-size: 32px;
+.navbar-left a {
+  font-family: 'Times New Roman';
 }
-*/
 
 .dropdown {
   display: none;
@@ -31,13 +30,6 @@
   color: white;
   font-size: 24px;
 }
-
-/*.dropdown-menu {
-  background: transparent;
-  border: none;
-  color: white;
-  width: 100%;
-}*/
 
 .navbar.scrolled {
   background-color: black !important;
@@ -79,27 +71,3 @@
     display: inline;
   }
 }
-
-
-/*@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 576px) {
-  .navbar {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar {
-    display: block;
-  }
-}*/
