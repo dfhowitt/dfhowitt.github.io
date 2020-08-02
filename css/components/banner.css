@@ -1,5 +1,5 @@
 .banner {
-  background: url('../../images/me.JPG');
+  background: url('https://res.cloudinary.com/dezrxo3qo/image/upload/v1596381842/dhowitt/me_kqqnne.jpg');
   background-size: cover;
   background-position: center center;
   -webkit-background-size: cover;
@@ -31,11 +31,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 50vh;
 }
 
 .banner-header {
-  margin-bottom: 348px;
+  margin-bottom: 100px;
   opacity: 0.85;
   font-weight: lighter;
 }
@@ -49,10 +49,7 @@
 
 @media (max-width: 600px) {
   .banner-header {
-    position: absolute;
-    bottom: 10;
-    left: 30;
-    width: 112px;
+    display: none;
   }
 }
 
@@ -78,9 +75,6 @@
   font-size: 32px;
   opacity: 1;
   transition: 0.3s;
-}
-
-.banner-nav {
 }
 
 .banner-nav .btn {
